@@ -1,29 +1,41 @@
+How to integrate a map into your SailfishOS app
+===============================================
+
+Packages and friends
+--------------------
+
 In your PROJECT.yaml file, add the following packages. These will be auto-installed on device/emulator when you deploy as RPM package.
 
 In the "Requires"-section add:
-- qt5-plugin-geoservices-nokia
-- qt5-plugin-geoservices-osm
-- qt5-qtdeclarative-import-location
-- qt5-qtdeclarative-import-positioning
-- sailfishsilica-qt5
+
+    - qt5-plugin-geoservices-nokia
+    - qt5-plugin-geoservices-osm
+    - qt5-qtdeclarative-import-location
+    - qt5-qtdeclarative-import-positioning
+    - sailfishsilica-qt5
 
 Your "PkgBR" should look like this:
-PkgBR: [qt5-qtlocation-devel, qt5-qtpositioning-devel, qt5-qtdeclarative-import-positioning]
+
+    PkgBR: [qt5-qtlocation-devel, qt5-qtpositioning-devel, qt5-qtdeclarative-import-positioning]
 
 
 You now have all the required packages to work with maps and location-based stuff.
 
 Next step is to show a map!
 
+QMLing it all up
+----------------
+
 First step is to include the right frameworks in your QML file:
-import QtPositioning 5.0
-import QtLocation 5.0
+    import QtPositioning 5.0
+    import QtLocation 5.0
 
 QTPositioning provides the ways to work with GPSes, while QTLocation gives us maps and everything around that.
 Great documentation for QTLocation can be found (strangly enough) on Ubuntu Touch website: http://developer.ubuntu.com/api/qml/sdk-1.0/QtLocation/
 QTPositioning docs can be found here: http://doc-snapshot.qt-project.org/qdoc/qtpositioning-index.html
 
 Now we're ready to add a Map-element to your QML file.
+
         Map {
             id: map
             anchors.fill: parent
@@ -47,5 +59,9 @@ For Nokias HERE maps you'll need an app_id and a token. Those can be found at: h
 You'll need to register as a developer, and don't worry, there's a free tier! (thx Nokia!)
 
 
-
+TODO:
+-----
+* Location via GPS
+* Map items
+* etc
 
