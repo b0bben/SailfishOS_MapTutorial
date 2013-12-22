@@ -1,0 +1,8 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/.build-id
+%dir /usr/lib/debug/.build-id/5f
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/bin
+/usr/lib/debug/.build-id/5f/06b142435fb0f4d922788500291e99002124e8
+/usr/lib/debug/.build-id/5f/06b142435fb0f4d922788500291e99002124e8.debug
+/usr/lib/debug/usr/bin/MapTutorial.debug
