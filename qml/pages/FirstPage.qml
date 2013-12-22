@@ -61,8 +61,8 @@ Page {
                 required.mapping: Plugin.AnyMappingFeatures
                 required.geocoding: Plugin.AnyGeocodingFeatures
                 parameters: [
-                    PluginParameter { name: "app_id"; value: "IMMbnmIowxA922jxCy7T" },
-                    PluginParameter { name: "token"; value: "2kM0o9f_KrMSzIUg4TaQbw" }
+                    PluginParameter { name: "app_id"; value: "" },
+                    PluginParameter { name: "token"; value: "" }
                 ]
             }
             center: currentPosition.coordinate
