@@ -5,6 +5,8 @@ Packages and friends
 --------------------
 
 In your PROJECT.yaml file, add the following packages. These will be auto-installed on device/emulator when you deploy as RPM package.
+**Important: You must set your project to "Deploy as RPM package" in Project settings for this to work.**
+*Don't forget to sync your target by going to "SailfishOS" sidebar item, choose your target, hit "Sync".*
 
 In the "Requires"-section add:
 
