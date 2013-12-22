@@ -29,6 +29,7 @@ QMLing it all up
 ----------------
 
 First step is to include the right frameworks in your QML file:
+
     import QtPositioning 5.0
     import QtLocation 5.0
 
